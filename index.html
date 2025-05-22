@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Product - Shopify Mockup</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <nav class="main-nav">
+                <a href="#" class="logo">Shopify Mockup</a>
+                <ul class="nav-links">
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="nav-icons">
+                    <span>&#128269;</span> <span>&#128100;</span> <span>&#128722;</span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="product-page-main">
+        <div class="container">
+            <div class="product-grid">
+                <div class="product-images">
+                    <div class="main-image-wrapper">
+                        <img id="mainProductImage" src="https://via.placeholder.com/600x600/f0f0f0/333333?text=Product+Image+1" alt="Main Product Image" class="main-product-image">
+                        <div class="image-zoom-area"></div>
+                    </div>
+                    <div class="thumbnail-gallery-wrapper">
+                        <div class="thumbnail-gallery" id="thumbnailGallery">
+                            <img src="https://via.placeholder.com/100x100/f0f0f0/333333?text=Img+1" alt="Product Thumbnail 1" class="thumbnail active" data-image="https://via.placeholder.com/600x600/f0f0f0/333333?text=Product+Image+1">
+                            <img src="https://via.placeholder.com/100x100/e0e0e0/444444?text=Img+2" alt="Product Thumbnail 2" class="thumbnail" data-image="https://via.placeholder.com/600x600/e0e0e0/444444?text=Product+Image+2">
+                            <img src="https://via.placeholder.com/100x100/d0d0d0/555555?text=Img+3" alt="Product Thumbnail 3" class="thumbnail" data-image="https://via.placeholder.com/600x600/d0d0d0/555555?text=Product+Image+3">
+                            <img src="https://via.placeholder.com/100x100/c0c0c0/666666?text=Img+4" alt="Product Thumbnail 4" class="thumbnail" data-image="https://via.placeholder.com/600x600/c0c0c0/666666?text=Product+Image+4">
+                            <img src="https://via.placeholder.com/100x100/b0b0b0/777777?text=Img+5" alt="Product Thumbnail 5" class="thumbnail" data-image="https://via.placeholder.com/600x600/b0b0b0/777777?text=Product+Image+5">
+                            <img src="https://via.placeholder.com/100x100/a0a0a0/888888?text=Img+6" alt="Product Thumbnail 6" data-image="https://via.placeholder.com/600x600/a0a0a0/888888?text=Product+Image+6">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-details">
+                    <h1 class="product-title">Premium Canvas Backpack</h1>
+                    <p class="product-price">$99.99</p>
+                    <div class="product-description-short">
+                        <p>Our Premium Canvas Backpack is crafted for durability and style. Perfect for daily commutes or weekend adventures, featuring multiple compartments and ergonomic design.</p>
+                    </div>
+
+                    <div class="product-variants">
+                        <div class="variant-group">
+                            <label for="color-select">Color:</label>
+                            <div class="color-options" id="colorOptions">
+                                <button class="color-swatch active" data-color="black" style="background-color: #333;"></button>
+                                <button class="color-swatch" data-color="blue" style="background-color: #3f51b5;"></button>
+                                <button class="color-swatch" data-color="green" style="background-color: #4CAF50;"></button>
+                                <button class="color-swatch" data-color="red" style="background-color: #F44336;"></button>
+                            </div>
+                        </div>
+
+                        <div class="variant-group">
+                            <label for="size-select">Size:</label>
+                            <div class="size-options" id="sizeOptions">
+                                <button class="size-option active" data-size="small">S</button>
+                                <button class="size-option" data-size="medium">M</button>
+                                <button class="size-option" data-size="large">L</button>
+                                <button class="size-option" data-size="xl">XL</button>
+                            </div>
+                            <button class="size-chart-button" id="openSizeChart">Size Chart</button>
+                        </div>
+                    </div>
+
+                    <button class="compare-colors-button" id="openCompareColors">Compare Colors</button>
+
+                    <div class="product-actions">
+                        <div class="quantity-selector">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" value="1" min="1">
+                        </div>
+                        <button class="add-to-cart-button">Add to Cart</button>
+                        <button class="buy-now-button">Buy It Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <section class="product-bundle">
+                <h2>Bundle & Save</h2>
+                <div class="bundle-items">
+                    <div class="bundle-main-product">
+                        <img src="https://via.placeholder.com/100x100/f0f0f0/333333?text=Product+A" alt="Product A">
+                        <div class="bundle-info">
+                            <p class="bundle-title">Premium Canvas Backpack</p>
+                            <p class="bundle-price">$99.99</p>
+                        </div>
+                    </div>
+                    <span class="bundle-plus">+</span>
+                    <div class="bundle-accessory">
+                        <img src="https://via.placeholder.com/100x100/add8e6/000000?text=Water+Bottle" alt="Water Bottle">
+                        <div class="bundle-info">
+                            <p class="bundle-title">Stainless Steel Water Bottle</p>
+                            <p class="bundle-price">$19.99</p>
+                        </div>
+                    </div>
+                    <div class="bundle-total">
+                        <p>Total: <span class="combined-price">$119.98</span></p>
+                        <button class="add-bundle-to-cart">Add Bundle to Cart</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="pair-well-with">
+                <h2>Pair Well With</h2>
+                <div class="scrollable-products">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x200/ffe4e1/000000?text=Accessory+1" alt="Accessory 1">
+                        <h3 class="product-card-title">Travel Pouch</h3>
+                        <p class="product-card-price">$24.99</p>
+                        <button class="product-card-add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/e0ffe0/000000?text=Accessory+2" alt="Accessory 2">
+                        <h3 class="product-card-title">Organizer Inserts</h3>
+                        <p class="product-card-price">$15.00</p>
+                        <button class="product-card-add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/e6e6fa/000000?text=Accessory+3" alt="Accessory 3">
+                        <h3 class="product-card-title">Portable Charger</h3>
+                        <p class="product-card-price">$39.99</p>
+                        <button class="product-card-add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/ffebcd/000000?text=Accessory+4" alt="Accessory 4">
+                        <h3 class="product-card-title">Notebook & Pen</h3>
+                        <p class="product-card-price">$12.50</p>
+                        <button class="product-card-add-to-cart">Add to Cart</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/c0c0c0/000000?text=Accessory+5" alt="Accessory 5">
+                        <h3 class="product-card-title">Rain Cover</h3>
+                        <p class="product-card-price">$18.00</p>
+                        <button class="product-card-add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="product-info-tabs">
+                <div class="tabs-header">
+                    <button class="tab-button active" data-tab="description">Description</button>
+                    <button class="tab-button" data-tab="product-info">Product Information</button>
+                    <button class="tab-button" data-tab="shipping-details">Shipping Details</button>
+                </div>
+                <div class="tabs-content">
+                    <div id="description" class="tab-pane active">
+                        <p>Experience unparalleled comfort and reliability with our Premium Canvas Backpack. Designed for the modern urban explorer, this backpack features a robust canvas exterior that withstands daily wear and tear, reinforced stitching for added durability, and a water-resistant coating to protect your belongings from light rain.</p>
+                        <ul>
+                            <li>Spacious main compartment with laptop sleeve (up to 15-inch).</li>
+                            <li>Multiple zippered pockets for organization.</li>
+                            <li>Padded shoulder straps and back panel for comfort.</li>
+                            <li>Stylish genuine leather accents.</li>
+                            <li>Ideal for travel, work, or school.</li>
+                        </ul>
+                    </div>
+                    <div id="product-info" class="tab-pane">
+                        <h3>Technical Specifications:</h3>
+                        <ul>
+                            <li><strong>Material:</strong> High-density Canvas, PU Leather</li>
+                            <li><strong>Dimensions:</strong> 18" (H) x 12" (W) x 6" (D)</li>
+                            <li><strong>Weight:</strong> 1.5 lbs</li>
+                            <li><strong>Capacity:</strong> 25 Liters</li>
+                            <li><strong>Care Instructions:</strong> Spot clean with damp cloth. Air dry.</li>
+                        </ul>
+                    </div>
+                    <div id="shipping-details" class="tab-pane">
+                        <h3>Shipping Information:</h3>
+                        <p>We offer worldwide shipping. Shipping costs are calculated at checkout based on your location and chosen shipping method.</p>
+                        <ul>
+                            <li><strong>Standard Shipping:</strong> 5-7 business days (Free on orders over $150)</li>
+                            <li><strong>Express Shipping:</strong> 2-3 business days (Additional charges apply)</li>
+                            <li>Orders are processed within 1-2 business days.</li>
+                            <li>You will receive a tracking number via email once your order ships.</li>
+                        </ul>
+                        <p>Please note: International customs duties and taxes may apply and are the responsibility of the customer.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="related-products">
+                <h2>You Might Also Like</h2>
+                <div class="related-products-grid">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/300x300/f8f8f8/000000?text=Related+Product+1" alt="Related Product 1">
+                        <span class="badge new">New</span>
+                        <h3 class="product-card-title">Lightweight Daypack</h3>
+                        <p class="product-card-price">$75.00</p>
+                        <button class="product-card-add-to-cart">View Product</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/300x300/f8f8f8/000000?text=Related+Product+2" alt="Related Product 2">
+                        <span class="badge popular">Popular</span>
+                        <h3 class="product-card-title">Vintage Messenger Bag</h3>
+                        <p class="product-card-price">$120.00</p>
+                        <button class="product-card-add-to-cart">View Product</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/300x300/f8f8f8/000000?text=Related+Product+3" alt="Related Product 3">
+                        <h3 class="product-card-title">Leather Travel Wallet</h3>
+                        <p class="product-card-price">$45.00</p>
+                        <button class="product-card-add-to-cart">View Product</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/300x300/f8f8f8/000000?text=Related+Product+4" alt="Related Product 4">
+                        <h3 class="product-card-title">Camping Hammock</h3>
+                        <p class="product-card-price">$55.00</p>
+                        <button class="product-card-add-to-cart">View Product</button>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Shopify Mockup Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="sizeChartModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="closeSizeChart">&times;</span>
+            <h2>Size Chart</h2>
+            <p>Please refer to the following measurements for the best fit:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Size</th>
+                        <th>Height (in)</th>
+                        <th>Width (in)</th>
+                        <th>Volume (L)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>S</td>
+                        <td>16-17</td>
+                        <td>10-11</td>
+                        <td>18-20</td>
+                    </tr>
+                    <tr>
+                        <td>M</td>
+                        <td>17-18</td>
+                        <td>11-12</td>
+                        <td>20-25</td>
+                    </tr>
+                    <tr>
+                        <td>L</td>
+                        <td>18-19</td>
+                        <td>12-13</td>
+                        <td>25-30</td>
+                    </tr>
+                    <tr>
+                        <td>XL</td>
+                        <td>19-20</td>
+                        <td>13-14</td>
+                        <td>30-35</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><small>Measurements are approximate and for guidance only.</small></p>
+        </div>
+    </div>
+
+    <div id="compareColorsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="closeCompareColors">&times;</span>
+            <h2>Compare Colors</h2>
+            <p>Select colors below to compare them side-by-side.</p>
+            <div class="compare-color-options" id="compareColorOptions">
+                <button class="compare-color-swatch" data-color="black" style="background-color: #333;" data-label="Black"></button>
+                <button class="compare-color-swatch" data-color="blue" style="background-color: #3f51b5;" data-label="Blue"></button>
+                <button class="compare-color-swatch" data-color="green" style="background-color: #4CAF50;" data-label="Green"></button>
+                <button class="compare-color-swatch" data-color="red" style="background-color: #F44336;" data-label="Red"></button>
+            </div>
+            <div class="selected-colors-display" id="selectedColorsDisplay">
+                </div>
+            <button class="clear-compare-selection" id="clearCompareSelection">Clear Selection</button>
+        </div>
+    </div>
+
+    <div id="customMessageBox" class="custom-message-box">
+        <div class="message-content">
+            <span class="close-message-box">&times;</span>
+            <p id="messageText"></p>
+            <button class="ok-button">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
